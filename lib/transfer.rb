@@ -21,9 +21,9 @@ class Transfer
     if @sender.valid? == false || @sender.balance <= 0 
       puts "Transaction rejected. Please check your account balance."
     else
-      #execute transaction by sending an amount from the senders bank account to the receiver bank account 
-      #update the balance by taking balance - amount 
-      new_balance = @balance - @amount 
+      # #execute transaction by sending an amount from the senders bank account to the receiver bank account 
+      # #update the balance by taking balance - amount 
+      # new_balance = @balance - @amount 
     end   
     
   end   
