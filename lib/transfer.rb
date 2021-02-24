@@ -19,8 +19,9 @@ class Transfer
   def execute_transaction
   
     if valid? == false
-       "Transaction rejected. Please check your account balance."
        @status = 'rejected'
+       "Transaction rejected. Please check your account balance."
+      
     else
       # #execute transaction by sending an amount from the senders bank account to the receiver bank account 
       # #update the balance by taking balance - amount 
