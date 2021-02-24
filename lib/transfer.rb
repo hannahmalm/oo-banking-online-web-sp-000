@@ -18,11 +18,11 @@ class Transfer
   
   def execute_transaction
   
-    if valid? == false || @sender.balance < @amount
+    if valid? == false || @sender.balance < @amount && @status = 'pending'
        @status = 'rejected'
        "Transaction rejected. Please check your account balance."
       
-    else
+    else 
       # #execute transaction by sending an amount from the senders bank account to the receiver bank account 
       # #update the balance by taking balance - amount 
       # whose balance are you taking? Does a transfer have a balance - No. Need to check sender balance 
