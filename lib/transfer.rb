@@ -25,7 +25,7 @@ class Transfer
     else
       # #execute transaction by sending an amount from the senders bank account to the receiver bank account 
       # #update the balance by taking balance - amount 
-      # new_balance = @balance - @amount 
+      new_balance = @balance - @amount 
     end   
     
   end   
