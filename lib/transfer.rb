@@ -28,6 +28,7 @@ class Transfer
       # whose balance are you taking? Does a transfer have a balance - No. Need to check sender balance 
       # sender.balance = sender.balance - amount
       sender.balance -= amount
+      receiver.balance += amount 
     end   
     
   end   
