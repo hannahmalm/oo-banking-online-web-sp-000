@@ -20,6 +20,7 @@ class Transfer
   
     if valid? == false
        "Transaction rejected. Please check your account balance."
+       @status = 'rejected'
     else
       # #execute transaction by sending an amount from the senders bank account to the receiver bank account 
       # #update the balance by taking balance - amount 
